@@ -85,11 +85,11 @@
 // *******************_3_**********************
 // var numArray = [10,20,30,40,50];
 // var firstNum = numArray[0];
-// var lastNum = numArray[4];
+// var lastNum = numArray[numArray.length - 1];
 
 // numArray[0] = numArray[1];
 // numArray[1] = firstNum;
-// numArray[4] = numArray[0];
+// numArray[numArray.length - 1] = numArray[0];
 // numArray[0] = lastNum;
 
 // console.log(numArray);
@@ -134,6 +134,7 @@
 // *******************_6_**********************
 
 
+
 // *******************_7_**********************
 // var nameArray = ["a", "b", "c", "d", "e", "f", "g", "h"];
 // var userInput = prompt("enter a name");
@@ -145,69 +146,81 @@
 // *******************_7_**********************
 
 
+
 // *******************_8_**********************
-// var array = [];
-// for(var i=0; i<3;i++){
-//     var inputName = Number(prompt("enter a number"));
-//     if(inputName){
-//     array.push(inputName);
+// numArray=[];
+
+// while(numArray.length<3){
+//     var userInput = Number(prompt("enter a number"));
+//     if(userInput){
+//         numArray.push(userInput);
 //     }
 // }
-// console.log(array);
+// console.log(numArray);
 
-// var total=1;
-// for(var i=0;i<array.length;i++){
-//     total=total*array[i];
+
+// var multiplySum=1;
+// for(var i=0; i<numArray.length;i++){
+//     multiplySum*=numArray[i];
 // }
-// console.log(total);
+// console.log(multiplySum);
+
 
 // var sum=0;
-// for(var i=0;i<array.length;i++){
-//     sum=sum+array[i];
+// for(var i=0;i<numArray.length;i++){
+//     sum+=numArray[i]
 // }
 // console.log(sum);
 
-// for(var i=0; i<array.length;i++){
-//     if(array[i]%2 == 0){
-//         console.log(`${array[i]} nice`);
+
+// for(var i=0; i<numArray.length;i++){
+//     if(numArray[i]%2==0){
+//         console.log(`${numArray[i]} is even`);
 //     }
-//     else if(array[i]%2 != 0){
-//         console.log(`${array[i]} bad`);
+//     else{
+//         console.log(`${numArray[i]} is not even`);
 //     }
 // }
 // *******************_8_**********************
 
 
+
 // *******************_9_**********************
-// var num;
-// for(var i=1; i<=10; i++){
-//     for(var j=1; j<=10; j++){
-//         num=i*j;
-//         console.log(`${i} * ${j} = ${num}`);
+
+// for(var i=1; i<=10;i++){
+//     for(var j=1; j<=10;j++){
+//         var sum= i*j;
+//         console.log(`${i} * ${j} = ${sum}`);
 //     }
 // }
 // *******************_9_**********************
 
 
+
 // *******************_10_**********************
-// var numArrayUserNames = ["marcos", "lior", "haim", "matan"];
-// var numArrayUserNum = [];
-// for(var i =0;i<10;i++){
-//     var userNumber = Number(prompt("enter number"));
-//     numArrayUserNum.push(userNumber);
+// nameArray=["a","b","c","d","e","f"];
+// userNum=[];
+// while(userNum.length<5){
+//     var userNumber=Number(prompt("enter a number"));
+//     if(userNumber){
+//         userNum.push(userNumber);
+//     }
 // }
-// for(var i=0; i<numArrayUserNum.length;i++){
-//     console.log(numArrayUserNames);
+// for(var i=0;i<nameArray.length;i++){
+//     for(var j=0;j<userNum.length;j++){
+//         console.log(nameArray[i]);
+//     }
 // }
 // *******************_10_**********************
 
 
-// *******************_11_**********************
-// for(var i=1; i<=100;i++){
+
+// *******************_11_**********************           
+// for(var i=1;i<100;i++){
 //     if(i%7!=0){
-//     console.log(i);
+//         console.log(i);
 //     }
-//     else if(i%7==0){
+//     else{
 //         console.log("boom");
 //     }
 // }
